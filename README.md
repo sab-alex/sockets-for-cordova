@@ -1,10 +1,9 @@
 sockets-for-cordova
 ===================
-This Cordova plugin provides JavaScript API, that allows you to communicate with server through TCP protocol.
+This Cordova plugin provides JavaScript API, that allows you to communicate with server through TCP protocol. It is working with Capacitor 3. It is based on the blochop's cordova plugin https://github.com/blocshop/sockets-for-cordova
 
 Currently we support these platforms: iOS, Android, WP8.
 
-You can also get information about this plugin from our blog post http://www.blocshop.cz/2015/01/12/tcp-networking-in-cordova/
 
 ## Installation
 
@@ -155,4 +154,18 @@ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  
+
+## What's new
+ - 1.2.3 - fixed iOS socket closing crashes [iOS]
+ - 1.5.0 - added iOS open and write timeouts, changed js errors format [iOS]
+ - 1.5.1 - fixed cordova js bridge implementation [js]
+ - 1.5.2 - fixed iOS open timeout [iOS]
+ - 1.5.3 - added Android open and write timeouts [Android]
+ - 1.5.4 - fixed iOS closing sockets on open timeout [iOS]
+ - 1.6.0 - close old existing sockets on reopen by destination ports. Removed iOS trash sources [iOS, Android]
+ - 1.7.0 - added codes to error handlers [iOS, Android]
+ - 1.7.1 - error handler bugfixes [Android]
+ - 1.7.2 - working with capacitor 3
+  
+Nexperience LDA, 2021  
