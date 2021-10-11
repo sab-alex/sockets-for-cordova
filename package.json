@@ -1,5 +1,5 @@
 {
-  "name": "@vendus/cordova-plugin-socket-tcp",
+  "name": "@vendus/sockets-for-cordova",
   "version": "1.7.2",
   "description": "This Cordova plugin provides JavaScript API, that allows you to communicate with server through TCP protocol. Currently we support these platforms: iOS, Android, WP8.",
   "cordova": {
