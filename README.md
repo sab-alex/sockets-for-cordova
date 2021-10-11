@@ -9,14 +9,15 @@ Currently we support these platforms: iOS, Android, WP8.
 
 Install this plugin simply by:
 
-`cordova plugin add cz.blocshop.socketsforcordova`
-
-or you can use GIT repository for most recent version:
-
-`cordova plugin add https://github.com/blocshop/sockets-for-cordova`
+`npm i @vendus/cordova-plugin-socket-tcp --save`
 
 ## Sample usage
-Here is simple example of how to connect to remote server, consume data from it and close the connection.
+Here is simple example of how to connect to remote server, consume data from it and close the connection. This example uses React with TypeScript.
+
+Import the package:
+```
+import Socket from '@vendus/cordova-plugin-socket-tcp';
+```
 
 Create instance of Socket type:
 ```
@@ -166,6 +167,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  - 1.6.0 - close old existing sockets on reopen by destination ports. Removed iOS trash sources [iOS, Android]
  - 1.7.0 - added codes to error handlers [iOS, Android]
  - 1.7.1 - error handler bugfixes [Android]
- - 1.7.2 - working with capacitor 3
+ - 1.7.2 - working with Capacitor 3 and TypeScript
   
 Nexperience LDA, 2021  
