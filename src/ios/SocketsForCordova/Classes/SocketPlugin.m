@@ -225,7 +225,7 @@
 }
 
 - (void) dispatchEvent: (NSString *) jsonEventString {
-    NSString *jsToEval = [NSString stringWithFormat : @"window.Socket.dispatchEvent(%@);", jsonEventString];
+    NSString *jsToEval = [NSString stringWithFormat : @"window.socket.dispatchEvent(%@);", jsonEventString];
     [self.commandDelegate evalJs:jsToEval];
 }
 
